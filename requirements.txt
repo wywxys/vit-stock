@@ -1,6 +1,5 @@
 numpy==1.25.0
 pandas==1.5.3
 torch==2.0.1
-torchvision==0.15.2
 streamlit==1.22.0
 yfinance==0.2.18
