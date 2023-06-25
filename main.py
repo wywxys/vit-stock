@@ -271,10 +271,10 @@ def streamlit_tab2():
             learning_rate = st.selectbox('选择学习率：', lr_select_list, index=0)
         with net_col2:
             cross_valid_percent = st.number_input('选择交叉验证比例：', 0.1, 0.9, 0.25)
-            epoch_num = st.number_input('选择训练轮数：', 1, 8000, 4000)
+            epoch_num = st.number_input('选择训练轮数：', 1, 8000, 4)
         with net_col3:
-            net_layer_num = st.number_input('选择深度网络层数：', 1, 18, 10)
-            batch_size_num = st.number_input('选择批次大小：', 1, 2048, 512)
+            net_layer_num = st.number_input('选择深度网络层数：', 1, 18, 4)
+            batch_size_num = st.number_input('选择批次大小：', 1, 2048, 100)
 
         dis_submit = False if stock_folder_list else True
         submitted = st.form_submit_button("Submit", disabled=dis_submit)
